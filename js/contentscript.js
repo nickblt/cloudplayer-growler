@@ -113,7 +113,11 @@ GoogleMusicParser.prototype._get_song_artist = function() {
  * @return Image URL or default artwork
  */
 GoogleMusicParser.prototype._get_song_cover = function() {
-    return ("http:" + $("#playingAlbumArt").attr("src"));
+    var src = $("#playingAlbumArt").attr("src");
+    if (src == "default_album_med.png")
+      return "http://music.google.com/music/default_album_med.png"
+    else
+      return ("http:" + src);
 };
 
 /**
