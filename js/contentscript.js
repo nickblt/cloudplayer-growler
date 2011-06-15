@@ -136,7 +136,8 @@ window.setInterval(
   function()
   {
     var newplayer = new Player(new GoogleMusicParser());
-    if (newplayer.is_playing && player.song.title != newplayer.song.title)
+    if (newplayer.is_playing &&
+      (player.song.title != newplayer.song.title || player.song.artist != newplayer.song.artist))
     {
       port.postMessage(newplayer);
       player = newplayer;
