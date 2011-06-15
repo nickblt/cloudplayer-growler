@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>10J869</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en-US</string>
+	<key>CFBundleExecutable</key>
+	<string>JSGrowl</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.nletourneau.jsgrowl</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>JSGrowl</string>
+	<key>CFBundlePackageType</key>
+	<string>BRPL</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>4A2002a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>4A2002a</string>
+	<key>DTSDKName</key>
+	<string>macosx10.6</string>
+	<key>DTXcode</key>
+	<string>0402</string>
+	<key>DTXcodeBuild</key>
+	<string>4A2002a</string>
+	<key>WebPluginDescription</key>
+	<string>Simple plugin to expose growl to javascript calls</string>
+	<key>WebPluginMIMETypes</key>
+	<dict>
+		<key>application/x-jsgrowl</key>
+		<dict>
+			<key>WebPluginTypeDescription</key>
+			<string>Growl plugin</string>
+		</dict>
+	</dict>
+	<key>WebPluginName</key>
+	<string>JS Growl</string>
+</dict>
+</plist>

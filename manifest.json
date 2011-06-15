@@ -1,0 +1,28 @@
+{
+  "name": "Google Music Growl Notifier",
+  "version": "1.0",
+  "description": "Growl notifications for Google Music track changes.",
+  "plugins": [{"path": "plugin/jsgrowl.bundle"}], 
+  "icons": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "64": "img/icon64.png",
+      "128": "img/icon128.png"
+  },
+  "permissions": [
+    "http://music.google.com/",
+    "https://music.google.com/"
+  ],
+  "background_page" : "background.html",
+  "content_scripts": [
+    {
+      "js": ["js/contentscript.js"],
+      "matches": ["http://music.google.com/music/listen*", "https://music.google.com/music/listen*"]
+    },
+    {
+      "js": ["js/jquery.min.js"],
+      "matches": ["http://music.google.com/music/listen*", "https://music.google.com/music/listen*"],
+      "run_at": "document_start"
+    }
+  ]
+}
