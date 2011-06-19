@@ -6,8 +6,6 @@
  * Licensed under the MIT license
  */
 
-
-var player = {}; // Previous player state
 // Connect event handlers
 chrome.extension.onConnect.addListener(port_on_connect);
 
@@ -19,37 +17,12 @@ function port_on_connect(port) {
 
     // Connect another port event handlers
     port.onMessage.addListener(port_on_message);
-    port.onDisconnect.addListener(port_on_disconnect);
 }
  
  /**
   * New message arrives to the port
   */
-function port_on_message(message)
+function port_on_message(player)
 {
-    // Current player state
-    var _p = message;
-    
-    if(_p.has_song)
-    {
-        if(_p.is_playing)
-        {
-          growl.notify(_p.song.title, _p.song.artist, _p.song.cover);
-          player = _p; // TODO: Save here?
-        }
-        else {
-            // The player is paused
-        }
-    }
-    else
-    {
-        player = {};
-    }
-}
- 
- /**
-  * Content script has disconnected
-  */
-function port_on_disconnect() {
-    player = {}; // Clear player state
+    growl.notify(player.song.title, player.song.artist, player.song.cover);
 }
