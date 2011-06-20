@@ -1,6 +1,6 @@
 {
   "name": "Growl Notifier for Google Music",
-  "version": "1.1",
+  "version": "1.1.2",
   "description": "Growl notifications for Google Music track changes.",
   "plugins": [{"path": "plugin/jsgrowl.bundle"}], 
   "icons": {
