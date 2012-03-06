@@ -96,7 +96,7 @@ GoogleMusicParser.prototype._get_song_artist = function() {
 GoogleMusicParser.prototype._get_song_cover = function() {
     var src = $("#playingAlbumArt").attr("src");
     if (src == "default_album_med.png")
-      return "http://music.google.com/music/default_album_med.png"
+      return "http://play.google.com/music/default_album_med.png"
     else
       return ("http:" + src);
 };
