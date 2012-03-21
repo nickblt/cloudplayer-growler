@@ -3,16 +3,14 @@ Google Play Growl Notifications for Chrome
 
 I like getting growl notifications of new tracks being played and I missed this feature when I started to use Google Play instead of iTunes. I wrote an NPAPI browser plugin to create a javascript->Growl bridge which you can find [here](https://github.com/nletourneau/JSGrowl), this extension uses that in order to send everything off.
 
-Big thanks to [asavartsov](https://github.com/asavartsov) for the [cloudplayer-scrobbler](https://github.com/asavartsov/cloudplayer-scrobbler/tree/google-music) source which I hacked up to use here, saved me a lot of time.
+Big thanks to [asavartsov](https://github.com/asavartsov) for the [cloudplayer-scrobbler](https://github.com/asavartsov/cloudplayer-scrobbler/tree/google-music) source which originally, saved me a lot of time. I have since moved on to a different style of getting the playing track information and stopped using any of his code.
 
 License
 =======
 
 (The MIT License)
 
-Copyright (c) 2011 Nicholas Letourneau ( http://nicholasletorneau.com )
-
-contentscript.js and background.js also Copyright (c) 2011 Alexey Savartsov <asavartsov@gmail.com>, Brad Lambeth <brad@lambeth.us>, 
+Copyright (c) 2011 2012 Nicholas Letourneau ( http://nicholasletorneau.com )
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
